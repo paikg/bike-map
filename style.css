@@ -1,0 +1,81 @@
+/* CSS files add styling rules to your content */
+
+h1 {
+  color: red;
+  font-size: 47px;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin-left: 18em;
+  margin-right: 18em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #DDC0B4;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  color: #FF0ECB;
+  font-size: 20px;
+}
+
+.main {
+  float: left;
+  width: 75%;
+  padding: 25px;
+  height: 100vh;
+}
+
+.sidebar {
+  background: lightblue;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 100vh;
+}
+
+.info {
+  border: 1px dashed black;
+  margin-top: 200px;
+  padding: 100px;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 34px;
+  }
+  
+  /* If the screen is too small, make everything 100% wide instead */
+  .main {
+    float: none;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+  }
+  
+  .sidebar {
+    float: none;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+  }
+  
+  /* If the screen is too small, get rid of the info box */
+  .info {
+    display: none; 
+  }
+}
